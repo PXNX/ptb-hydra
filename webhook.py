@@ -208,7 +208,7 @@ async def main() -> None:
 
     admin_chat_id = 123456
 
-    port = os.getenv("PORT")
+    port = int(os.getenv("PORT"))
 
 
     context_types = ContextTypes(context=CustomContext)
